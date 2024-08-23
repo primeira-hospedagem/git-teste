@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Faltas</title>
+    <link rel="stylesheet" href="novo_style.css">
+</head>
+<body>
+    <!-- Tela de Login de Usuário Comum -->
+    <div id="login-usuario" class="screen">
+        <h1>Login</h1>
+        <input type="text" id="cpf-usuario" placeholder="CPF">
+        <input type="password" id="senha-usuario" placeholder="Senha">
+        <button id="entrar-usuario">Entrar</button>
+        <button id="entrar-admin">Entrar como Administrador</button>
+    </div>
+
+    <!-- Tela de Login de Administrador -->
+    <div id="login-admin" class="screen">
+        <h1>Login Administrador</h1>
+        <input type="text" id="cpf-admin" placeholder="CPF">
+        <input type="password" id="senha-admin" placeholder="Senha">
+        <button id="entrar-admin-submit">Entrar</button>
+        <button id="entrar-como-usuario">Entrar como Usuário Comum</button>
+    </div>
+
+    <!-- Tela de Visualização de Faltas -->
+    <div id="view-faltas" class="screen">
+        <h1>Informações de Faltas</h1>
+        <select id="turno-select">
+            <option value="manha">Manhã</option>
+            <option value="tarde">Tarde</option>
+        </select>
+        <p id="info-faltas">Presentes: 0, Faltas: 0</p>
+        <button id="logout">Sair</button>
+    </div>
+
+    <!-- Tela de Cadastro de Faltas -->
+    <div id="cadastro-faltas" class="screen">
+        <h1>Cadastro de Faltas</h1>
+        <input type="text" id="nome-sala" placeholder="Nome da Sala">
+        <input type="number" id="qtd-alunos" placeholder="Quantidade de Alunos">
+        <select id="turno-sala">
+            <option value="manha">Manhã</option>
+            <option value="tarde">Tarde</option>
+        </select>
+        <button id="registrar-sala">Registrar Sala</button>
+        <ul id="lista-salas"></ul>
+        <button id="logout-admin">Sair</button>
+    </div>
+
+    <script src="novo_script.js"></script>
+</body>
+</html>
